@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(wait)",
+      "Bash(npm run:*)",
+      "Bash(./node_modules/.bin/next build:*)",
+      "Bash(echo \"/** @type {import\\(''next''\\).NextConfig} */:*)",
+      "Bash(cp /Users/ignacioboghossian/Desktop/mec/app/public/gabriela.jpeg /Users/ignacioboghossian/Desktop/mec/public/gabriela.jpeg)",
+      "Bash(cp /Users/ignacioboghossian/Desktop/mec/app/public/gabriela2.jpeg /Users/ignacioboghossian/Desktop/mec/public/gabriela2.jpeg)",
+      "Bash(ls /Users/ignacioboghossian/Desktop/mec/.env*)",
+      "Bash(npx tsc:*)",
+      "Bash(zip -r ../mec-hostinger.zip out/)",
+      "Bash(zip -r ../../mec-hostinger.zip . --exclude \"*.DS_Store\")",
+      "Bash(/Users/ignacioboghossian/Desktop/mec/out/.htaccess:*)",
+      "Bash(zip -r ../../mec-hostinger.zip .)",
+      "Bash(zip -r ../../mec-hostinger.zip . --exclude \"*.DS_Store\" --exclude \"*.txt\")",
+      "Bash(zip -r \"../../mec-deploy-final.zip\" . --exclude \"*.DS_Store\" --exclude \"*.txt\")"
+    ]
+  }
+}
