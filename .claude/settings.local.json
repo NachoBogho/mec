@@ -15,7 +15,11 @@
       "Bash(/Users/ignacioboghossian/Desktop/mec/out/.htaccess:*)",
       "Bash(zip -r ../../mec-hostinger.zip .)",
       "Bash(zip -r ../../mec-hostinger.zip . --exclude \"*.DS_Store\" --exclude \"*.txt\")",
-      "Bash(zip -r \"../../mec-deploy-final.zip\" . --exclude \"*.DS_Store\" --exclude \"*.txt\")"
+      "Bash(zip -r \"../../mec-deploy-final.zip\" . --exclude \"*.DS_Store\" --exclude \"*.txt\")",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git remote:*)",
+      "Bash(git push:*)"
     ]
   }
 }

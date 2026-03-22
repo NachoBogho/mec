@@ -1,0 +1,28 @@
+# Static site — no framework required
+Options -Indexes
+
+# Serve pre-rendered HTML for clean URLs
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# /framework → /framework/index.html
+RewriteRule ^framework/?$ /framework/index.html [L]
+
+# /contact → /contact/index.html
+RewriteRule ^contact/?$ /contact/index.html [L]
+
+# Custom 404
+ErrorDocument 404 /404.html
+
+# Cache static assets
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>

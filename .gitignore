@@ -3,8 +3,6 @@ node_modules/
 
 # Next.js build outputs
 .next/
-out/
-out_clean/
 
 # Zips generados
 *.zip
